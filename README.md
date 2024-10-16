@@ -46,7 +46,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 
 
-#   a p p o i n t m e n t s - b a c k e n d 
+#   a p p o i n t m e n t s - w e b 
 ```
 La aplicación está construida con el framework React.js implementando typescript.
 implementando una arquitectura limpia basica
