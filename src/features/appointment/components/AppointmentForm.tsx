@@ -45,8 +45,10 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({ setModalOpen,loadAppo
         loadAppointments();
         setModalOpen(false);
         alert('La cita fué actualizada');
-       }
+       }else{
+        
        alert('La cita no se pudo seleccionar');
+       }
       } catch (error) {
         if (error instanceof Error) {
             setError(error.message); 

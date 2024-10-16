@@ -2,9 +2,10 @@ import axios from "axios";
 import { Appointment } from "../../features/appointment/interfaces/appointment.interface";
 import axiosAPI from "../axios-config";
 
-export const updateAppointmentService = async (appointment: Partial<Appointment>) => {
+export const updateAppointmentService = async (appointment:Appointment) => {
     try {
-        const response = await axiosAPI.put(`/appointments/${appointment.id}`, appointment);
+      const {id,...rest}=appointment
+        const response = await axiosAPI.put(`/appointments/${id}`, rest);
         return response.data;
       } catch (error) {
 
